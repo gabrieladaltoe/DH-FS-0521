@@ -36,7 +36,8 @@ app.get('/calcular/:num1&:num2',(req,res) => {
     if(num1 && !num2){
         res.send('numero' + num1)
     } else if(num1 && num2 ){
-        res.send('soma dos numeros é' + num1+num2)
+        let soma = num1+num2
+        res.send('soma dos numeros é' + soma)
     }
 
 }
