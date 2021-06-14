@@ -77,3 +77,16 @@ app.listen(3000, () => {
 
 Para atualizar automaticamente o conteudo a ser carregado no servidor, é indicado rodar o *npm install nodemon -g* e *nodemon app.js*
 
+Para enviarmos um arquivo utilizando o método get, usaremos o método sendFile, do Express. 
+
+~~~javascript
+
+const path = require('path'); //caminho nativo, não é necessario instalação
+
+app.get('/contato', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views/index.html'))
+})
+
+
+
+~~~
