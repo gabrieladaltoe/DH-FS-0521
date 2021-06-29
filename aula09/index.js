@@ -32,6 +32,8 @@ app.get('/cumprimentar/:nome', (req,res) => {
 app.get('/calcular/:num1&:num2',(req,res) => {
     let num1 = Number(req.params.num1);
     let num2 = Number(req.params.num2);
+    let { num1, num2} = Number(req.params);
+
 
     if(num1 && !num2){
         res.send('numero' + num1)
@@ -39,6 +41,5 @@ app.get('/calcular/:num1&:num2',(req,res) => {
         let soma = num1+num2
         res.send('soma dos numeros é' + soma)
     }
-
 }
 );

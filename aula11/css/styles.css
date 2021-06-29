@@ -1,0 +1,20 @@
+/* definindo altura da pagina para conseguir aplicar uma altura 
+no elemento header para que consiga trabalhar com porcentagem */
+html, body {
+  height: 100%;
+}
+
+/* HEADER */
+header {
+  height: 10%;
+  width: 100%;
+  background-color: #ffb90f;
+  margin-top: 70px;
+  position: relative;
+}
+
+header nav img {
+  width: 200px;
+  position: absolute;
+  top: -65px;
+}

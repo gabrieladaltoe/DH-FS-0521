@@ -1,0 +1,201 @@
+/* definindo altura da pagina para conseguir aplicar uma altura 
+no elemento header para que consiga trabalhar com porcentagem */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER */
+header {
+  height: 15%;
+  width: 100%;
+  background-color: #ffb90f;
+  margin-top: 70px;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav img {
+  width: 96px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-start;
+  width: 45%;
+  flex-grow: 0.3;
+  list-style: none;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+header nav ul li {
+  margin-right: 40px;
+}
+
+/* SECTION DE PRODUTOS */
+main {
+  height: 650px;
+  margin: 40px auto;
+  width: 960px;
+}
+
+main section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url('../img/product-1.jpg');
+  margin: 0 15px 15px 0;
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+}
+
+section article img {
+  width: 70px;
+  align-self: flex-end;
+}
+
+section article div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #101010;
+  color: white;
+  height: 40px;
+  font-size: 20px;
+}
+
+section article button {
+  align-self: center;
+  position: relative;
+  bottom: 30px;
+  width: 90px;
+  height: 40px;
+  background: #ff4500;
+  color: white;
+}
+
+
+/* Contato */
+
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact h1{
+  font-size: 32px;
+}
+
+#contact p{
+  font-size: 21px;
+  margin: 15px 0;
+}
+
+.form input[type=text]{
+  border: 1px solid #c8c8c8;
+  border-bottom: 3px solid #ffb90f;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px 5px 0 0;
+}
+
+.form textarea{
+  border: 1px solid #c8c8c8;
+  border-bottom: 3px solid #ffb90f;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px 5px 0 0;
+
+}
+
+label{
+  font-weight: bold;
+}
+
+.input-linha{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+
+.input-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+textarea{
+  width: 100%;
+  display: block;
+}
+
+.width-50{
+  width: 45%;
+}
+
+
+.width100{
+  width: 100%;
+}
+
+.btn-contact{
+  background-color:#ffb90f;
+  border: none;
+  padding: 10px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 10px 0;
+  opacity: 0.8;
+  transition: 1s;
+  cursor: pointer;
+}
+
+
+.btn-contact:hover{
+  opacity: 1;
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.5);
+}
+
+
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #ffb90f;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+  color: white;
+  font-size: 20px;
+  line-height: 100px;
+}
