@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/*--------GERAL---------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html{
+    font-size: 93.75%;
+    /*15px - a fonte padrão é 16px*/
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*--------HEADER---------*/
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0 5px 5px rgba(128, 128, 128, 0.212);
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 99;
+}
+
+header img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover; 
+}
+
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+header .logo p{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(47, 47, 47);
+}
+
+header nav{
+    
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+header nav ul a{
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    font-weight: bold;
+}
+
+header nav ul a:hover{
+    color: rgb(77, 45, 77);
+    border-bottom: 4px solid rgb(77, 45, 77) ;
+    padding-bottom: 35px;
+
+}
+
+/*--------MAIN---------*/
+
+main{
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+#banner{
+    width: 100%;
+    height: 100vh;
+    background: url(/aula16/img//banner.jpg) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#banner p,
+#banner h1{
+    color:#fff;
+}
+
+#banner h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+#banner button{
+    text-transform: uppercase;
+    font-size: 1rem;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#banner button:hover{
+    opacity: 1;
+}
+
+/*--------CATALOGO---------*/
+
+#catalogo{
+    padding: 50px 0;
+}
+
+#catalogo .itens{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+#catalogo .item{
+    width: 300px;
+    height: 150px;
+    position: relative;
+    margin: 10px;
+}
+
+#catalogo .item img{
+    width: 300px;
+    height: 150px;
+    position: absolute;
+}
+
+#catalogo .item button{
+    position: absolute;
+    text-align: center;
+    top: 90px;
+    left: 90px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#catalogo .item button:hover{
+    background:rgb(47, 47, 47);
+    color: #fff;
+}
+
+/*--------FOOTER---------*/
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background:rgb(77, 45, 77);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+
+}
+
+
+
+/*  CONTACT   */
+
+#contact{
+    width: 100%;
+    height: 100vh;
+    background: url(/aula16/img//banner.jpg) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact form{
+    background: rgba(255, 255, 255, 0.808);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+#contact .input-group{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+#contact label{
+    font-weight: bolder;
+    color: rgb(77, 45, 77);
+}
+
+#contact input[type=text],
+#contact input[type=email],
+#contact textarea{
+    background-color: #fff;
+    border: 1px solid rgb(77, 45, 77);
+    padding: 8px;
+    border-radius: 25px;
+}
+
+#contact button{
+    background-color: rgb(77, 45, 77);
+    border: 2px solid rgb(77, 45, 77);
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 5px auto;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 1s;
+}
+
+#contact button:hover{
+    background-color: transparent;
+    color: rgb(77, 45, 77);
+}
+
+/* ABOUT  */
+
+
+#about{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+#about img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+#about p{
+    width: 300px;
+    padding: 50px;
+    line-height: 2rem;
+}
