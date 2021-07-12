@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/html_css/pseudoseletores.css">
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorum nemo in voluptas suscipit, sint corrupti soluta tempora harum nisi ex. Asperiores magni sint debitis? Non commodi quisquam quod fugit?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorum nemo in voluptas suscipit, sint corrupti soluta tempora harum nisi ex. Asperiores magni sint debitis? Non commodi quisquam quod fugit?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorum nemo in voluptas suscipit, sint corrupti soluta tempora harum nisi ex. Asperiores magni sint debitis? Non commodi quisquam quod fugit?</p>
+
+    <form>
+
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
+        <br>
+
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="email@email.me" required>
+        <br>
+
+        <label for="senha">Password</label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+        <br>
+
+        <label for="cinema">Você já foi ao cinema esse ano?</label>
+        <br>
+        <input type="radio" name="cinema" id="sim" value="sim"><label for="sim">Sim</label>
+        <br>
+        <input type="radio" name="cinema" id="nao" value="nao"><label for="nao">Não</label>
+
+    
+        <br>
+
+        <label for="genero">Qual seu genero de cinema favorito?</label>
+        <br>
+
+        <input type="checkbox" name="genero" id="terror" value="terror" checked><label for="teror">Terror</label>
+        <br>
+        <input type="checkbox" name="genero" id="romance" value="romance" ><label for="romance">Romance</label>
+        <br>
+        <input type="checkbox" name="genero" id="comedia" value="comedia" ><label for="comedia">Comédia</label>
+
+    
+        <label for="pais">País</label>
+        <br>
+
+        <select name="pais" id="pais">
+            <option selected disabled>Selecione</option>
+
+            <option value="BRA">Brasil</option>
+            <option value="FRA">França</option>
+            <option value="EUA">Estados Unidos</option>
+            <option value="ING">Inglaterra</option>
+        </select>
+
+        <br>
+
+        <label for="mensagem">Mensagem</label>
+           
+        <br>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+       
+        <br>
+        <button type="button">Teste</button>
+        <button type="reset">Limpar campos</button>
+        <input type="submit" value="enviar">
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

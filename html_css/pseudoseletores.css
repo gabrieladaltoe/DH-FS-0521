@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*pseudoseletores*/
+
+
+
+input:hover{
+    border-color: orange;
+}
+
+input:focus{
+    width: 400px;
+}
+
+p:hover{
+   color: orange;
+}
+
+p:first-of-type{
+    background-color: palegreen;
+}
+
+p:nth-child(even){
+    background-color: palegreen;
+}
